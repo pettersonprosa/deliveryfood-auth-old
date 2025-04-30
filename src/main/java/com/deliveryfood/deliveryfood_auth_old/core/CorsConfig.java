@@ -1,4 +1,4 @@
-package com.deliveryfood.deliveryfood_auth_old;
+package com.deliveryfood.deliveryfood_auth_old.core;
 
 // Fonte: https://spring.io/blog/2015/06/08/cors-support-in-spring-framework#filter-based-cors-support
 

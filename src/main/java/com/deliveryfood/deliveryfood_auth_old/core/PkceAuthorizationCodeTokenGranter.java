@@ -1,4 +1,4 @@
-package com.deliveryfood.deliveryfood_auth_old;
+package com.deliveryfood.deliveryfood_auth_old.core;
 
 // Solução baseada em: https://github.com/spring-projects/spring-security-oauth/pull/675/files
 

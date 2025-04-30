@@ -1,4 +1,4 @@
-package com.deliveryfood.deliveryfood_auth_old;
+package com.deliveryfood.deliveryfood_auth_old.core;
 
 import javax.validation.constraints.NotBlank;
 
