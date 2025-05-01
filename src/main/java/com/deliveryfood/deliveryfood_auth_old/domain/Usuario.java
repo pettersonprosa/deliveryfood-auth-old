@@ -1,10 +1,16 @@
 package com.deliveryfood.deliveryfood_auth_old.domain;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -27,5 +33,11 @@ public class Usuario {
 	
 	@Column(nullable = false)
 	private String senha;
+
+	@ManyToMany
+    @JoinTable(name = "usuario_grupo",
+            joinColumns = @JoinColumn(name = "usuario_id"),
+            inverseJoinColumns = @JoinColumn(name = "grupo_id"))
+    private Set<Grupo> grupos = new HashSet<>();
 	
 }
